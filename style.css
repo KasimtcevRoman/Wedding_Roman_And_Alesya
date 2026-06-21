@@ -593,7 +593,7 @@ body {
 }
 
 /* ============================================================
-   АНКЕТА — ИСПРАВЛЕННАЯ ВЕРСИЯ
+   АНКЕТА — ПОЛНОСТЬЮ ИСПРАВЛЕННАЯ ВЕРСИЯ
    ============================================================ */
 .rsvp-section {
   position: relative;
@@ -624,36 +624,49 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px 30px 30px 30px;
+  padding: 60px 30px 40px 30px;
   width: 341px;
-  min-height: 740px;
+  min-height: 780px;
   height: auto;
   margin: 0 auto;
   color: #ff3643;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   position: relative;
 }
 
 .rsvp-form,
 .rsvp-form input,
-.rsvp-form h3,
-.checkbox-group label {
+.rsvp-form h3 {
   font-family: "Bryndan Write", cursive;
   text-transform: none;
   color: #ff3643;
 }
 
+/* ЗАГОЛОВКИ */
 .rsvp-form h3 {
   font-size: 24px;
-  margin-top: 0;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.rsvp-title-main {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 2px 0;
+}
+
+.rsvp-title-alcohol {
+  font-size: 22px;
+  text-align: center;
+  margin: 6px 0 2px 0;
 }
 
 .rsvp-form h3:last-of-type {
-  margin-top: 8px;
-  margin-bottom: 2px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
 /* ПОЛЕ ВВОДА ИМЕНИ */
@@ -675,8 +688,16 @@ body {
   color: rgba(255, 54, 67, 0.5);
 }
 
-/* ГРУППЫ ЧЕКБОКСОВ — ВСЁ В СТРОКУ, БЕЗ МАСШТАБА */
-.attendance-group,
+/* ГРУППЫ ЧЕКБОКСОВ — БЕЗ МАСШТАБА, ВСЁ В СТРОКУ */
+.attendance-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 2px 0 4px 0;
+  width: 100%;
+  justify-content: flex-start;
+}
+
 .alcohol-group {
   display: flex;
   flex-wrap: wrap;
@@ -698,7 +719,7 @@ body {
   white-space: nowrap;
 }
 
-/* НАТИВНЫЕ ЧЕКБОКСЫ — ВИДИМЫЕ И КЛИКАБЕЛЬНЫЕ */
+/* НАТИВНЫЕ ВИДИМЫЕ ЧЕКБОКСЫ */
 .attendance-group input[type="radio"],
 .attendance-group input[type="checkbox"],
 .alcohol-group input[type="checkbox"] {
@@ -711,19 +732,19 @@ body {
   margin: 0;
 }
 
-/* КНОПКА ОТПРАВКИ */
+/* ОТПРАВИТЬ */
 .submit-btn {
   font-family: "Bryndan Write", cursive;
   background: transparent;
   border: none;
   color: white;
-  font-size: 28px;
-  padding: 14px 0 6px 0;
+  font-size: 30px;
+  padding: 12px 0 6px 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
   width: 100%;
   text-align: center;
-  margin-top: 6px;
+  margin-top: 4px;
   letter-spacing: 1px;
 }
 
@@ -740,34 +761,12 @@ body {
   opacity: 0.6;
 }
 
-/* ЗАГОЛОВКИ ВНУТРИ АНКЕТЫ */
-.rsvp-title-main {
-  font-size: 28px;
-  text-align: center;
-  margin: 2px 0 0 0;
-}
-
-.rsvp-title-alcohol {
-  font-size: 20px;
-  text-align: center;
-  margin: 4px 0 2px 0;
-}
-
+/* ОБЁРТКИ */
 .wrapper-radio-group1,
 .wrapper-radio-group2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-/* УДАЛЯЕМ СТАРЫЕ КАСТОМНЫЕ ЧЕКБОКСЫ */
-.checkbox-group input[type="radio"],
-.checkbox-group input[type="checkbox"] {
-  display: inline-block !important;
-}
-
-.checkbox-group label::before {
-  display: none !important;
 }
 
 /* ============================================================
@@ -849,7 +848,7 @@ body {
 
 .final-polaroid-img {
   display: block;
-  margin: -88px auto 0 auto;
+  margin: -83px auto 0 auto;
   width: 327px;
   height: 350px;
   transform: rotate(-0.59deg);
@@ -1149,7 +1148,7 @@ body {
     top: -19px;
   }
 
-  /* АНКЕТА НА ДЕСКТОПЕ */
+  /* ===== АНКЕТА НА ДЕСКТОПЕ ===== */
   .rsvp-title {
     transform: none;
   }
@@ -1165,8 +1164,8 @@ body {
 
   .rsvp-form {
     width: 528px;
-    padding: 55px 60px 40px 60px;
-    min-height: 820px;
+    padding: 60px 60px 40px 60px;
+    min-height: 840px;
   }
 
   .desktop-hide {
@@ -1177,30 +1176,27 @@ body {
     font-size: 32px;
   }
 
-  .rsvp-form h3:last-of-type {
-    transform: none;
-    margin-top: 14px;
-  }
-
   .rsvp-title-main {
-    transform: none;
     font-size: 42px;
+    margin: 0 0 4px 0;
   }
 
   .rsvp-title-alcohol {
-    transform: none;
     font-size: 36px;
-    margin: 14px 0 18px 0;
+    margin: 10px 0 6px 0;
+  }
+
+  .rsvp-form h3:last-of-type {
+    margin-top: 10px;
   }
 
   .rsvp-input-name {
-    transform: none;
     font-size: 22px;
     padding: 14px 20px;
+    margin: 6px 0 8px 0;
   }
 
   .rsvp-input-name::placeholder {
-    transform: none;
     font-size: 22px;
   }
 
@@ -1209,11 +1205,14 @@ body {
     padding-left: 0;
   }
 
-  .attendance-group,
+  .attendance-group {
+    gap: 12px 28px;
+    margin: 4px 0 6px 0;
+  }
+
   .alcohol-group {
-    transform: none;
-    margin: 6px 0;
-    gap: 10px 22px;
+    gap: 10px 20px;
+    margin: 4px 0 6px 0;
   }
 
   .attendance-group label,
@@ -1230,10 +1229,9 @@ body {
   }
 
   .submit-btn {
-    transform: none;
-    font-size: 32px;
-    padding: 16px 0 6px 0;
-    margin-top: 14px;
+    font-size: 34px;
+    padding: 14px 0 6px 0;
+    margin-top: 8px;
   }
 
   .submit-btn:disabled,
