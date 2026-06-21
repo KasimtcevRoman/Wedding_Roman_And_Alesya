@@ -623,7 +623,7 @@ body {
   background-position: center;
   padding: 50px 40px;
   width: 341px;
-  height: 780px;
+  height: 870px;
   margin: 0 auto;
   color: #ff3643;
   display: flex;
@@ -794,7 +794,7 @@ body {
 
 .final-polaroid-img {
   display: block;
-  margin: -85px auto 0 auto;
+  margin: -108px auto 0 auto;
   width: 327px;
   height: 350px;
   transform: rotate(-0.59deg);
@@ -850,11 +850,11 @@ body {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 10px;
-  transform: translate(1px, 5px) scale(1.75);
+  transform: translate(1px, 15px) scale(1.75);
 }
 
 .rsvp-title-alcohol {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   margin: -19px 0 15px 0;
   transform: translate(0px, 0px);
