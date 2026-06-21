@@ -621,9 +621,9 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px 40px 80px 40px;
+  padding: 50px 40px;
   width: 341px;
-  min-height: 800px;
+  height: 780px;
   margin: 0 auto;
   color: #ff3643;
   display: flex;
@@ -794,7 +794,7 @@ body {
 
 .final-polaroid-img {
   display: block;
-  margin: -90px auto 0 auto;
+  margin: -108px auto 0 auto;
   width: 327px;
   height: 350px;
   transform: rotate(-0.59deg);
@@ -903,21 +903,19 @@ body {
 
 .submit-btn {
   font-family: "Bryndan Write", cursive;
+  transform: translateY(-30px);
   text-transform: none;
-  position: absolute;
-  bottom: 10px;
-  left: 40px;
-  right: 40px;
-  width: calc(100% - 80px);
+  width: 100%;
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1;
-  padding: 18px 0;
+  padding: 25px 0 0 0;
   color: white;
   border: none;
   font-size: 28px;
+  border-radius: 10px;
   cursor: pointer;
   transition:
     opacity 0.3s ease,
@@ -1251,11 +1249,9 @@ body {
   }
 
   .submit-btn {
-    bottom: 40px;
-    left: 80px;
-    right: 80px;
-    width: calc(100% - 160px);
+    transform: none;
     font-size: 28px;
+    margin-top: 55px;
   }
 
   .organizers-contacts {
