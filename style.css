@@ -593,7 +593,7 @@ body {
 }
 
 /* ============================================================
-   АНКЕТА (RSVP) — ИСПРАВЛЕННАЯ ВЕРСИЯ
+   АНКЕТА — ИСПРАВЛЕННАЯ ВЕРСИЯ
    ============================================================ */
 .rsvp-section {
   position: relative;
@@ -624,9 +624,9 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px 30px 40px 30px;
+  padding: 50px 30px 30px 30px;
   width: 341px;
-  min-height: 820px;
+  min-height: 740px;
   height: auto;
   margin: 0 auto;
   color: #ff3643;
@@ -652,14 +652,15 @@ body {
 }
 
 .rsvp-form h3:last-of-type {
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 8px;
+  margin-bottom: 2px;
 }
 
+/* ПОЛЕ ВВОДА ИМЕНИ */
 .rsvp-input-name {
   width: 100%;
-  padding: 14px 18px;
-  margin: 6px 0 10px 0;
+  padding: 12px 16px;
+  margin: 4px 0 6px 0;
   background-color: transparent;
   border: 2px solid #ff3643;
   border-radius: 8px;
@@ -674,13 +675,13 @@ body {
   color: rgba(255, 54, 67, 0.5);
 }
 
-/* ГРУППЫ ЧЕКБОКСОВ — ВСЁ В СТРОКУ, БЕЗ МАСШТАБИРОВАНИЯ */
+/* ГРУППЫ ЧЕКБОКСОВ — ВСЁ В СТРОКУ, БЕЗ МАСШТАБА */
 .attendance-group,
 .alcohol-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 16px;
-  margin: 4px 0 8px 0;
+  gap: 6px 14px;
+  margin: 2px 0 4px 0;
   width: 100%;
   justify-content: flex-start;
 }
@@ -689,7 +690,7 @@ body {
 .alcohol-group label {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   font-size: 18px;
   font-family: "Bryndan Write", cursive;
   color: #ff3643;
@@ -702,8 +703,8 @@ body {
 .attendance-group input[type="checkbox"],
 .alcohol-group input[type="checkbox"] {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   accent-color: #ff3643;
   cursor: pointer;
   flex-shrink: 0;
@@ -717,12 +718,12 @@ body {
   border: none;
   color: white;
   font-size: 28px;
-  padding: 18px 0 10px 0;
+  padding: 14px 0 6px 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
   width: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 6px;
   letter-spacing: 1px;
 }
 
@@ -739,8 +740,38 @@ body {
   opacity: 0.6;
 }
 
+/* ЗАГОЛОВКИ ВНУТРИ АНКЕТЫ */
+.rsvp-title-main {
+  font-size: 28px;
+  text-align: center;
+  margin: 2px 0 0 0;
+}
+
+.rsvp-title-alcohol {
+  font-size: 20px;
+  text-align: center;
+  margin: 4px 0 2px 0;
+}
+
+.wrapper-radio-group1,
+.wrapper-radio-group2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* УДАЛЯЕМ СТАРЫЕ КАСТОМНЫЕ ЧЕКБОКСЫ */
+.checkbox-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  display: inline-block !important;
+}
+
+.checkbox-group label::before {
+  display: none !important;
+}
+
 /* ============================================================
-   ОРГАНИЗАТОРЫ И ФИНАЛ
+   ОРГАНИЗАТОРЫ
    ============================================================ */
 .organizers-contacts {
   display: flex;
@@ -818,7 +849,7 @@ body {
 
 .final-polaroid-img {
   display: block;
-  margin: -85px auto 0 auto;
+  margin: -88px auto 0 auto;
   width: 327px;
   height: 350px;
   transform: rotate(-0.59deg);
@@ -860,31 +891,8 @@ body {
   margin-bottom: 28px;
 }
 
-.wrapper-radio-group1,
-.wrapper-radio-group2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.rsvp-title-main {
-  font-size: 28px;
-  text-align: center;
-  margin: 6px 0 4px 0;
-}
-
-.rsvp-title-alcohol {
-  font-size: 20px;
-  text-align: center;
-  margin: 8px 0 6px 0;
-}
-
 .date-section span:nth-of-type(2)::after {
   transform: translateY(-50%) translate(6px, 0px) scale(1.2);
-}
-
-.attendance-group:first-of-type {
-  margin-top: -6px;
 }
 
 /* ============================================================
@@ -1158,7 +1166,7 @@ body {
   .rsvp-form {
     width: 528px;
     padding: 55px 60px 40px 60px;
-    min-height: 869px;
+    min-height: 820px;
   }
 
   .desktop-hide {
@@ -1170,8 +1178,8 @@ body {
   }
 
   .rsvp-form h3:last-of-type {
-    margin-top: 18px;
     transform: none;
+    margin-top: 14px;
   }
 
   .rsvp-title-main {
@@ -1182,13 +1190,13 @@ body {
   .rsvp-title-alcohol {
     transform: none;
     font-size: 36px;
-    margin: 20px 0 25px 0;
+    margin: 14px 0 18px 0;
   }
 
   .rsvp-input-name {
     transform: none;
     font-size: 22px;
-    padding: 16px 20px;
+    padding: 14px 20px;
   }
 
   .rsvp-input-name::placeholder {
@@ -1204,28 +1212,28 @@ body {
   .attendance-group,
   .alcohol-group {
     transform: none;
-    margin: 8px 0;
-    gap: 12px 24px;
+    margin: 6px 0;
+    gap: 10px 22px;
   }
 
   .attendance-group label,
   .alcohol-group label {
     font-size: 22px;
-    gap: 8px;
+    gap: 7px;
   }
 
   .attendance-group input[type="radio"],
   .attendance-group input[type="checkbox"],
   .alcohol-group input[type="checkbox"] {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
   .submit-btn {
     transform: none;
     font-size: 32px;
-    padding: 20px 0 10px 0;
-    margin-top: 20px;
+    padding: 16px 0 6px 0;
+    margin-top: 14px;
   }
 
   .submit-btn:disabled,
@@ -1308,4 +1316,24 @@ body {
     width: 120vw;
     height: 500px;
     top: -5%;
-    transform: rotate
+    transform: rotate(10deg);
+  }
+
+  .spot-2 {
+    width: 120vw;
+    height: 500px;
+    top: 18%;
+    transform: rotate(-5deg);
+  }
+
+  .spot-3 {
+    width: 700px;
+    height: 1000px;
+  }
+
+  .spot-4 {
+    width: 700px;
+    height: 1000px;
+    left: 80%;
+  }
+}
