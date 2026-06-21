@@ -850,7 +850,7 @@ body {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 10px;
-  transform: translate(1px, -10px) scale(1.75);
+  transform: translate(1px, 0px) scale(1.75);
 }
 
 .rsvp-title-alcohol {
@@ -871,7 +871,7 @@ body {
   border-radius: 8px;
   font-size: 22px;
   outline: none;
-  transform: translate(0px, 0px);
+  transform: translate(0px, 10px);
 }
 
 .attendance-group {
