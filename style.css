@@ -621,10 +621,10 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px 40px 60px 40px;
-  width: min(341px, 92vw);
-  min-height: 722px;
+  padding: 50px 40px;
+  width: min(341px, 96vw);
   height: auto;
+  min-height: 722px;
   margin: 0 auto;
   color: #ff3643;
   display: flex;
@@ -644,25 +644,25 @@ body {
 
 .rsvp-form h3 {
   font-size: 24px;
-  margin-top: 0;
+  margin-top: -8px;
 }
 
 .rsvp-form h3:last-of-type {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: -28px;
+  margin-bottom: -2px;
 }
 
 .rsvp-form input[type="text"] {
-  width: 100%;
+  width: calc(100% + 38px);
   height: 43px;
   padding: 16px 20px;
-  margin: 0;
+  margin: -4px -19px;
   background-color: transparent;
   border: 2px solid #ff3643;
   border-radius: 8px;
   font-size: 22px;
   outline: none;
-  transform: none;
+  transform: translate(1px, -16px);
 }
 
 .rsvp-form input[type="text"]::placeholder {
@@ -681,7 +681,7 @@ body {
 }
 
 .checkbox-group label {
-  font-size: 22px;
+  font-size: clamp(15px, 4.5vw, 22px);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -795,7 +795,7 @@ body {
 
 .final-polaroid-img {
   display: block;
-  margin: -88px auto 0 auto;
+  margin: -83px auto 0 auto;
   width: 327px;
   height: 350px;
   transform: rotate(-0.59deg);
@@ -847,18 +847,18 @@ body {
 }
 
 .rsvp-title-main {
-  font-size: clamp(28px, 8vw, 40px);
+  font-size: 36px;
   text-align: center;
   margin-top: 12px;
   margin-bottom: 10px;
-  transform: none;
+  transform: translate(1px, -10px) scale(1.75);
 }
 
 .rsvp-title-alcohol {
-  font-size: clamp(18px, 5vw, 26px);
+  font-size: 26px;
   text-align: center;
-  margin: 0 0 10px 0;
-  transform: none;
+  margin: -19px 0 15px 0;
+  transform: translate(0px, 0px);
   letter-spacing: 0.7px;
   align-self: center;
 }
@@ -866,45 +866,45 @@ body {
 .rsvp-input-name {
   width: 100%;
   padding: 16px 20px;
-  margin: 0;
+  margin: 15px 0;
   background-color: transparent;
   border: 2px solid #ff3643;
   border-radius: 8px;
   font-size: 22px;
   outline: none;
-  transform: none;
+  transform: translate(0px, 0px);
 }
 
 .attendance-group {
-  transform: none;
+  transform: scale(1.45);
   transform-origin: left center;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
   width: 100%;
-  margin-left: 0;
+  margin-left: -31px;
 }
 
 .attendance-group label {
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: 0.4px;
 }
 
 .alcohol-group {
-  transform: none;
+  transform: scale(1.45);
   transform-origin: left center;
   margin-top: 2px;
-  margin-left: 0;
-  margin-bottom: 8px;
+  margin-left: -31px;
+  margin-bottom: 16px;
   width: 100%;
 }
 
 .alcohol-group label {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0.4px;
 }
 
 .submit-btn {
   font-family: "Bryndan Write", cursive;
-  transform: none;
+  transform: translateY(-36px);
   text-transform: none;
   width: 100%;
   background: transparent;
@@ -924,8 +924,8 @@ body {
 }
 
 .rsvp-input-name::placeholder {
-  font-size: 22px;
-  transform: none;
+  font-size: 28px;
+  transform: translateY(5px);
 }
 
 .date-section span:nth-of-type(2)::after {
@@ -933,7 +933,7 @@ body {
 }
 
 .attendance-group:first-of-type {
-  margin-top: 0;
+  margin-top: -21px;
 }
 
 @media (min-width: 300px) {
@@ -1196,9 +1196,8 @@ body {
 
   .rsvp-form {
     width: 528px;
-    padding: 55px 80px 60px 80px;
-    min-height: 869px;
-    height: auto;
+    padding: 55px 80px 0px 80px;
+    height: 869px;
   }
 
   .desktop-hide {
@@ -1230,7 +1229,7 @@ body {
   }
 
   .rsvp-form input[type="text"] {
-    width: 100%;
+    width: 394px;
   }
 
   .wrapper-radio-group1,
@@ -1365,7 +1364,7 @@ body {
 }
 
 .rsvp-form h3:last-of-type {
-	transform: none;
+	transform: translate(0px, 14px);
 }
 
 }
