@@ -623,7 +623,7 @@ body {
   background-position: center;
   padding: 50px 40px 80px 40px;
   width: 341px;
-  min-height: 722px;
+  min-height: 800px;
   margin: 0 auto;
   color: #ff3643;
   display: flex;
@@ -905,7 +905,7 @@ body {
   font-family: "Bryndan Write", cursive;
   text-transform: none;
   position: absolute;
-  bottom: 28px;
+  bottom: 10px;
   left: 40px;
   right: 40px;
   width: calc(100% - 80px);
@@ -1367,4 +1367,7 @@ body {
 }
 
 .rsvp-form h3:last-of-type {
-	transform: trans
+	transform: translate(0px, 14px);
+}
+
+}
