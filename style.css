@@ -854,12 +854,13 @@ body {
 }
 
 .rsvp-title-alcohol {
-  font-size: 14px;
+  font-size: 26px;
   text-align: center;
   margin: -19px 0 15px 0;
   transform: translate(0px, 0px);
   letter-spacing: 0.7px;
   align-self: center;
+  width: 400px;
 }
 
 .rsvp-input-name {
@@ -1215,7 +1216,7 @@ body {
   .rsvp-title-alcohol {
     transform: none;
     font-size: 36px;
-    margin: 20px 0 25px 0;
+    /* margin: 20px 0 25px 0; */
   }
 
   .rsvp-input-name {
